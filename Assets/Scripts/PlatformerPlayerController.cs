@@ -20,6 +20,10 @@ public class PlatformerPlayerController : MonoBehaviour
         {
             rb.gravityScale = 3;
         }
+        else
+        {
+            rb.gravityScale = 5;
+        }
         // Zeminde olup olmadığını kontrol et
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
 

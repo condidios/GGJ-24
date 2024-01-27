@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PickUpChicken : MonoBehaviour
@@ -21,7 +22,7 @@ public class PickUpChicken : MonoBehaviour
             text.SetActive(true);
             if (Input.GetKey(KeyCode.E))
             {
-                text.SetActive(false);
+                text.transform.position = new Vector3(2000, 2000, 2000);
                 gameObject.SetActive(false);
                 ChickenOnPlayer.SetActive(true);
             }
