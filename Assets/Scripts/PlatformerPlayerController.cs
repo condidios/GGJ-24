@@ -7,6 +7,7 @@ public class PlatformerPlayerController : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public GameObject chicken;
+    public GameObject box;
     private Rigidbody2D rb;
     private Animator animator;
         
@@ -19,6 +20,10 @@ public class PlatformerPlayerController : MonoBehaviour
         if (chicken.activeInHierarchy)
         {
             rb.gravityScale = 3;
+        }
+        else if (box.activeInHierarchy)
+        {
+            rb.gravityScale = 7;
         }
         else
         {

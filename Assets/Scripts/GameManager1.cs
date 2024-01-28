@@ -27,4 +27,9 @@ public class GameManager1 : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void mainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
